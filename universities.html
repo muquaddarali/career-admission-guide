@@ -5,61 +5,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Universities | Career & Admission Guide</title>
 
-<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-.banner{
-background:#1565c0;
-color:#fff;
-text-align:center;
-padding:50px 20px;
+body{
+    background:#f5f7fa;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
-.university-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:40px;
+.navbar{
+    background:#0d6efd;
 }
 
-.uni-card{
-background:#fff;
-padding:20px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-text-align:center;
-transition:.3s;
+.navbar-brand,
+.nav-link{
+    color:#fff!important;
+    font-weight:bold;
 }
 
-.uni-card:hover{
-transform:translateY(-8px);
+.title{
+    text-align:center;
+    margin:40px 0;
+    color:#0d6efd;
+    font-weight:bold;
 }
 
-.uni-card h3{
-color:#1565c0;
-margin-bottom:10px;
+.card{
+    border:none;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.3s;
+    height:100%;
 }
 
-.apply-btn{
-display:inline-block;
-margin-top:15px;
-padding:10px 20px;
-background:#ff9800;
-color:#fff;
-text-decoration:none;
-border-radius:6px;
+.card:hover{
+    transform:translateY(-8px);
 }
 
-.apply-btn:hover{
-background:#e68900;
+.card img{
+    height:180px;
+    object-fit:cover;
 }
 
-.back{
-display:inline-block;
-margin:30px;
-text-decoration:none;
-font-weight:bold;
-color:#1565c0;
+.btn-primary{
+    width:100%;
+}
+
+footer{
+    background:#0d6efd;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
 }
 </style>
 
@@ -67,115 +64,336 @@ color:#1565c0;
 
 <body>
 
-<header>
+<nav class="navbar navbar-expand-lg">
+<div class="container">
 
-<div class="logo">
-<h2>🎓 Career & Admission Guide</h2>
+<a class="navbar-brand" href="index.html">
+🎓 Career & Admission Guide
+</a>
+
+<button class="navbar-toggler bg-light" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="universities.html">Universities</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="rci-courses.html">RCI Courses</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="admissions.html">Admissions</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
 </div>
 
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="universities.html">Universities</a></li>
-<li><a href="rci-courses.html">RCI Courses</a></li>
-<li><a href="admissions.html">Admissions</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+</div>
 </nav>
 
-</header>
+<div class="container">
 
-<section class="banner">
+<h1 class="title">
+Top Universities
+</h1>
 
-<h1>Top Universities</h1>
+<div class="row g-4">
+
+<!-- IGNOU -->
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://picsum.photos/500/300?1">
+
+<div class="card-body">
+
+<h4>IGNOU</h4>
 
 <p>
-Admission Open 2026–27
+Distance Education | UG | PG | Diploma
 </p>
 
-</section>
+<a href="https://wa.me/919555666400"
+class="btn btn-primary">
 
-<div class="university-grid">
+Apply Now
 
-<div class="uni-card">
-<h3>Manglayatan University</h3>
-<p>UG • PG • Diploma • Distance Education</p>
-<a href="https://wa.me/919555666400" class="apply-btn">Apply Now</a>
+</a>
+
 </div>
 
-<div class="uni-card">
-<h3>IGNOU</h3>
-<p>Distance & Online Education</p>
-<a href="https://wa.me/919555666400" class="apply-btn">Apply Now</a>
-</div>
-
-<div class="uni-card">
-<h3>DU SOL</h3>
-<p>School of Open Learning</p>
-<a href="https://wa.me/919555666400" class="apply-btn">Apply Now</a>
-</div>
-
-<div class="uni-card">
-<h3>CCS University</h3>
-<p>UG • PG • Professional Courses</p>
-<a href="https://wa.me/919555666400" class="apply-btn">Apply Now</a>
-</div>
-
-<div class="uni-card">
-<h3>Jamia Millia Islamia</h3>
-<p>Central University</p>
-<a href="https://wa.me/919555666400" class="apply-btn">Apply Now</a>
-</div>
-
-<div class="uni-card">
-<h3>Aligarh Muslim University (AMU)</h3>
-<p>Regular Courses</p>
-<a href="https://wa.me/919555666400" class="apply-btn">Apply Now</a>
-</div>
-
-<div class="uni-card">
-<h3>MDU</h3>
-<p>Maharshi Dayanand University</p>
-<a href="https://wa.me/919555666400" class="apply-btn">Apply Now</a>
-</div>
-
-<div class="uni-card">
-<h3>LPU</h3>
-<p>Lovely Professional University</p>
-<a href="https://wa.me/919555666400" class="apply-btn">Apply Now</a>
-</div>
-
-<div class="uni-card">
-<h3>Subharti University</h3>
-<p>Distance & Regular Programs</p>
-<a href="https://wa.me/919555666400" class="apply-btn">Apply Now</a>
-</div>
-
-<div class="uni-card">
-<h3>Sikkim Manipal University</h3>
-<p>Online Degree Programs</p>
-<a href="https://wa.me/919555666400" class="apply-btn">Apply Now</a>
-</div>
-
-<div class="uni-card">
-<h3>Amity University</h3>
-<p>Online & Distance Programs</p>
-<a href="https://wa.me/919555666400" class="apply-btn">Apply Now</a>
 </div>
 
 </div>
 
-<center>
-<a href="index.html" class="back">⬅ Back to Home</a>
-</center>
+<!-- DU -->
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://picsum.photos/500/300?2">
+
+<div class="card-body">
+
+<h4>DU SOL</h4>
+
+<p>
+UG | PG | Distance Courses
+</p>
+
+<a href="https://wa.me/919555666400"
+class="btn btn-primary">
+
+Apply Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CCS -->
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://picsum.photos/500/300?3">
+
+<div class="card-body">
+
+<h4>CCS University</h4>
+
+<p>
+BA | BCom | MA | MCom | B.Ed
+</p>
+
+<a href="https://wa.me/919555666400"
+class="btn btn-primary">
+
+Apply Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Jamia -->
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://picsum.photos/500/300?4">
+
+<div class="card-body">
+
+<h4>Jamia Millia Islamia</h4>
+
+<p>
+UG | PG | Professional Courses
+</p>
+
+<a href="https://wa.me/919555666400"
+class="btn btn-primary">
+
+Apply Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- AMU -->
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://picsum.photos/500/300?5">
+
+<div class="card-body">
+
+<h4>AMU</h4>
+
+<p>
+UG | PG | Entrance Based
+</p>
+
+<a href="https://wa.me/919555666400"
+class="btn btn-primary">
+
+Apply Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MDU -->
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://picsum.photos/500/300?6">
+
+<div class="card-body">
+
+<h4>MDU</h4>
+
+<p>
+Regular & Distance Courses
+</p>
+
+<a href="https://wa.me/919555666400"
+class="btn btn-primary">
+
+Apply Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- LPU -->
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://picsum.photos/500/300?7">
+
+<div class="card-body">
+
+<h4>LPU</h4>
+
+<p>
+Online | Distance | Regular
+</p>
+
+<a href="https://wa.me/919555666400"
+class="btn btn-primary">
+
+Apply Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Subharti -->
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://picsum.photos/500/300?8">
+
+<div class="card-body">
+
+<h4>Subharti University</h4>
+
+<p>
+Distance & Online Courses
+</p>
+
+<a href="https://wa.me/919555666400"
+class="btn btn-primary">
+
+Apply Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Manglayatan -->
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="https://picsum.photos/500/300?9">
+
+<div class="card-body">
+
+<h4>Manglayatan University</h4>
+
+<p>
+UG | PG | Distance Courses
+</p>
+
+<a href="https://wa.me/919555666400"
+class="btn btn-primary">
+
+Apply Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 <footer>
 
-<p>© 2026 Career & Admission Guide</p>
+© 2026 Career & Admission Guide
+
+<br><br>
+
+WhatsApp : +91 9555666400
 
 </footer>
 
-<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
