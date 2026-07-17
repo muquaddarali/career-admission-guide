@@ -76,7 +76,53 @@ body{
 .btn{
     border-radius:30px;
 }
+/* WhatsApp Button */
 
+.whatsapp-float{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+width:60px;
+
+height:60px;
+
+background:#25D366;
+
+color:#fff;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+.whatsapp-float:hover{
+
+background:#128C7E;
+
+transform:scale(1.1);
+
+color:#fff;
+
+}
 </style>
 
 </head>
@@ -522,6 +568,14 @@ Submit Enquiry
 </div>
 
 </footer>
+<!-- WhatsApp Floating Button -->
 
+<a href="https://wa.me/919555666400"
+class="whatsapp-float"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
 </body>
 </html>
