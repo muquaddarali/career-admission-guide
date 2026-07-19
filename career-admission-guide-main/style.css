@@ -1,0 +1,593 @@
+/* ==========================================
+   CAREER & ADMISSION GUIDE - STYLE.CSS (FIXED)
+========================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+    color: #333;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary: #0d6efd;
+    --secondary: #198754;
+    --warning: #ffc107;
+    --dark: #0b2447;
+    --light: #f8f9fa;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Reusable Section Styles */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.btn {
+    border-radius: 40px;
+    font-weight: 600;
+    padding: 10px 24px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border: none;
+}
+
+/* Top Notice Bar */
+.top-notice {
+    background: #198754;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 0;
+    font-size: 15px;
+    position: relative;
+    z-index: 1050;
+}
+
+.top-notice marquee {
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--primary) !important;
+    padding: 15px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.nav-link:hover {
+    color: #ffd54f !important;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.dropdown-item {
+    padding: 10px 18px;
+}
+
+.dropdown-item:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* Premium Hero Slider */
+#slider {
+    margin-top: 0px; /* Adjust according to layout */
+}
+
+#slider .carousel-item {
+    height: 600px;
+    position: relative;
+}
+
+#slider .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#slider .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.55));
+    z-index: 1;
+}
+
+#slider .carousel-caption {
+    z-index: 2;
+    bottom: 22%;
+}
+
+#slider .carousel-caption h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-shadow: 3px 3px 15px rgba(0,0,0,.6);
+    animation: fadeDown 1s ease;
+}
+
+#slider .carousel-caption p {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,.6);
+    animation: fadeUp 1.2s ease;
+}
+
+#slider .btn {
+    padding: 14px 35px;
+    font-size: 18px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 70%;
+}
+
+.carousel-indicators button {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+/* Partner University Slider */
+.logo-slider {
+    overflow: hidden;
+    background: #fff;
+    padding: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+}
+
+.logo-track {
+    display: flex;
+    width: max-content;
+    animation: scrollLogo 25s linear infinite;
+}
+
+.logo-track span {
+    min-width: 220px;
+    margin: 0 12px;
+    padding: 18px;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.logo-track span:hover {
+    background: #198754;
+    transform: scale(1.08);
+}
+
+/* Latest Admission Alert Box */
+.alert {
+    animation: zoomEffect 2s infinite alternate;
+}
+
+/* Cards & Hover Effects */
+.card {
+    transition: 0.35s;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+.card img {
+    transition: 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.card-body h4 {
+    font-weight: 700;
+}
+
+.card-body p {
+    color: #666;
+}
+
+/* Why Choose Us Features */
+.feature-box {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+    height: 100%;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.feature-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.feature-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    color: #666;
+}
+
+/* Statistics Section */
+.stats-section {
+    background: #0d6efd;
+    padding: 70px 0;
+    color: #fff;
+}
+
+.stats-section h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.stats-section p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Student Reviews */
+.review-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s;
+    height: 100%;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.review-card h4 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.review-card h5 {
+    color: #0d6efd;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+/* FAQ Accordion */
+.accordion-button {
+    font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #0d6efd;
+    color: #fff;
+}
+
+.accordion-item {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    border: none;
+}
+
+/* Premium Footer */
+.footer {
+    background: #0b2d5c;
+    color: #fff;
+    padding: 60px 0 20px;
+}
+
+.footer h3, .footer h4 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 6px 0;
+    transition: .3s;
+}
+
+.footer a:hover {
+    color: #ffc107;
+    padding-left: 8px;
+}
+
+.footer hr {
+    border-color: rgba(255,255,255,.25);
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+/* Floating Action Buttons */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: white;
+    font-size: 32px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.25);
+    transition: .3s;
+    animation: whatsappPulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+.call-float {
+    position: fixed;
+    bottom: 95px;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.25);
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+.call-float:hover {
+    background: #198754;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+/* Animations */
+@keyframes scrollLogo {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes zoomEffect {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.02); }
+}
+
+@keyframes whatsappPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.navbar{
+backdrop-filter: blur(10px);
+}
+
+.navbar .nav-link{
+transition:.3s;
+}
+
+.navbar .nav-link:hover{
+transform:translateY(-2px);
+}
+
+#slider .btn{
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+#slider .btn:hover{
+transform:translateY(-4px);
+}
+
+@media(max-width:768px){
+
+#slider .carousel-item{
+height:420px;
+}
+
+#slider .carousel-caption{
+bottom:15%;
+}
+
+#slider h1{
+font-size:34px;
+}
+
+#slider p{
+font-size:17px;
+}
+
+.section-title{
+font-size:30px;
+}
+
+.stats-section h2{
+font-size:34px;
+}
+
+}
+.whatsapp-float{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+background:#25D366;
+color:white;
+
+width:60px;
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+z-index:999;
+
+}
+.whatsapp-float{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+background:#25D366;
+color:white;
+
+width:60px;
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+z-index:999;
+
+}
+
+.whatsapp-float:hover{
+
+transform:scale(1.1);
+
+}
+.whatsapp-float{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+background:#25D366;
+color:white;
+
+width:60px;
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+z-index:999;
+
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}

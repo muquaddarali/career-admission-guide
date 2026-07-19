@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Universities | Career & Admission Guide</title>
+
+    <!-- Bootstrap 5 & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Link to your global CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: #f5f7fb;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Premium Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #00b4db);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        /* Search Box Layout Adjustment */
+        .search-box {
+            margin-top: -30px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .search-box input {
+            height: 60px;
+            border-radius: 40px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            padding-left: 25px;
+        }
+
+        /* Dynamic Custom Styles for Cards */
+        .card {
+            border: none;
+            border-radius: 18px;
+            transition: 0.35s ease;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,.06);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,.12);
+        }
+
+        .card img.uni-logo {
+            height: 180px;
+            object-fit: contain;
+            padding: 25px;
+            background: #fff;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .card-title {
+            color: #0b2447;
+            font-weight: 700;
+        }
+
+        .btn {
+            border-radius: 30px;
+            font-weight: 600;
+        }
+        
+        .badge-course {
+            background-color: #e6f0ff;
+            color: #0d6efd;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 5px 12px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 3px;
+        }
+
+        /* Floating WhatsApp style override if style.css is missing */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,.3);
+            z-index: 999;
+            transition: .3s;
+        }
+        .whatsapp-float:hover {
+            background: #128C7E;
+            transform: scale(1.1);
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="index.html">
+🎓 Career & Admission Guide
+</a>
+
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">
+Home
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link active" href="universities.html">
+Universities
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="rci-courses.html">
+RCI Courses
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="admissions.html">
+Admissions
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Top Partner Universities</h1>
+            <p>Choose the Best University for Your Brighter Future</p>
+        </div>
+    </section>
+
+    <!-- Interactive Search Box Section -->
+    <div class="container search-box">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- User requested Keydown trigger added -->
+                <input type="text" id="searchBox" class="form-control form-control-lg" placeholder="Search University, Course, Board..." onkeydown="if(event.key === 'Enter') searchSite()">
+            </div>
+        </div>
+    </div>
+
+    <!-- Universities Catalog -->
+    <section class="container py-5 mt-4">
+        <div class="row g-4">
+
+            <!-- IGNOU -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/ignou.png" class="uni-logo" alt="IGNOU">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title mb-2">IGNOU</h4>
+                            <p class="text-muted">India's largest Open University offering trusted distance learning programs across multiple streams.</p>
+                            <div class="mb-3">
+                                <span class="badge-course">BA / MA</span>
+                                <span class="badge-course">B.Com / M.Com</span>
+                                <span class="badge-course">MBA / MCA</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary w-100">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DU SOL -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/dusol.png" class="uni-logo" alt="DU SOL">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title mb-2">Delhi University SOL</h4>
+                            <p class="text-muted">Premium Distance Learning Program of Delhi University providing globally recognized standard degrees.</p>
+                            <div class="mb-3">
+                                <span class="badge-course">B.A. (Hons)</span>
+                                <span class="badge-course font-weight-bold">B.Com</span>
+                                <span class="badge-course">M.A. / M.Com</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary w-100">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subharti University -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/uv-subharti-university.webp" class="uni-logo" alt="Subharti University">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title mb-2">Subharti University</h4>
+                            <p class="text-muted">UGC & DEB approved university highly popular for both traditional distance education and professional courses.</p>
+                            <div class="mb-3">
+                                <span class="badge-course">B.Ed / D.El.Ed</span>
+                                <span class="badge-course">UG & PG Programs</span>
+                                <span class="badge-course">Professional Diplomas</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary w-100">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CCS University -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/ccsu.png" class="uni-logo" alt="CCS University">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title mb-2">CCS University</h4>
+                            <p class="text-muted">Chaudhary Charan Singh University, Meerut. Highly preferred for regular and traditional state university certificates.</p>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary w-100 mt-3">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jamia Millia Islamia -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/jamia.png" class="uni-logo" alt="Jamia Millia Islamia">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title mb-2">Jamia Millia Islamia</h4>
+                            <p class="text-muted">Top prestigious Central University offering excellence via regular tracks and structural distance education modes.</p>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary w-100 mt-3">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AMU -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/amu.png" class="uni-logo" alt="AMU">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title mb-2">AMU (Aligarh Muslim University)</h4>
+                            <p class="text-muted">A premier central academic powerhouse renowned for elite educational curriculums and research programs.</p>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary w-100 mt-3">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mangalayatan University -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/mangalayatan.png" class="uni-logo" alt="Mangalayatan University">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title mb-2">Mangalayatan University</h4>
+                            <p class="text-muted">Fast-growing private entity providing tech-savvy structures in Engineering, Management, and Professional streams.</p>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary w-100 mt-3">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UPRTOU -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/uprtou.png" class="uni-logo" alt="UPRTOU">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title mb-2">UP Rajarshi Tandon Open University</h4>
+                            <p class="text-muted">State open university specializing in highly affordable regional dynamic open education models.</p>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary w-100 mt-3">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integral & Chandigarh University -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/cu.png" class="uni-logo" alt="Chandigarh University">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="card-title mb-2">Chandigarh University</h4>
+                            <p class="text-muted">NAAC A+ accredited dynamic learning atmosphere specialized in industry-linked corporate modules.</p>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary w-100 mt-3">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- University Benefits Feature Box -->
+    <section class="py-5 bg-light border-top">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">Why Choose These Universities?</h2>
+                <p class="text-muted">We help students acquire verified corporate pathways with complete digital documentation.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 text-center">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <div class="display-5 mb-2 text-primary">🎓</div>
+                        <h5 class="fw-bold">UGC Approved</h5>
+                        <p class="text-muted small mb-0">Completely recognized as per dynamic statutory compliance.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <div class="display-5 mb-2 text-success">💰</div>
+                        <h5 class="fw-bold">Affordable Fees</h5>
+                        <p class="text-muted small mb-0">Direct official fees structure with easy instalment channels.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <div class="display-5 mb-2 text-warning">📘</div>
+                        <h5 class="fw-bold">Distance & Online</h5>
+                        <p class="text-muted small mb-0">Flexible exam environments tailored for corporate working professionals.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <div class="display-5 mb-2 text-danger">📞</div>
+                        <h5 class="fw-bold">Admission Support</h5>
+                        <p class="text-muted small mb-0">End-to-end guided assistance from registry selection to online results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unified Form Integration Section -->
+    <section class="container py-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-primary">🎓 Quick Admission Enquiry Form</h2>
+            <p class="text-muted">Fill out your preferred selections and submit instantly to connect with experts via WhatsApp.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow p-5 border-0">
+                    <form onsubmit="event.preventDefault();">
+                        <div class="mb-3">
+                            <label for="studentName" class="form-label fw-semibold">Full Name</label>
+                            <input type="text" id="studentName" class="form-control" placeholder="Enter Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="studentMobile" class="form-label fw-semibold">Mobile Number</label>
+                            <input type="tel" id="studentMobile" class="form-control" placeholder="Enter Mobile Number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="studentUniversity" class="form-label fw-semibold">Select Target University</label>
+                            <input type="text" id="studentUniversity" class="form-control" placeholder="e.g. IGNOU, DU SOL, Subharti...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="studentCourse" class="form-label fw-semibold">Target Course</label>
+                            <input type="text" id="studentCourse" class="form-control" placeholder="e.g. B.A., B.Com, MBA, B.Ed">
+                        </div>
+                        <button type="button" class="btn btn-success btn-lg w-100 mt-3 rounded-pill" onclick="sendAdmissionForm()">
+                            📲 Submit & Chat on WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Live Statistics Counter -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-3 col-6">
+                    <h2 class="counter fw-bold text-info" data-target="50">0</h2>
+                    <p class="text-white-50 small">Partner Universities</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="counter fw-bold text-info" data-target="5000">0</h2>
+                    <p class="text-white-50 small">Students Guided</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="counter fw-bold text-info" data-target="100">0</h2>
+                    <p class="text-white-50 small">Admission Support %</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="counter fw-bold text-info" data-target="24">0</h2>
+                    <p class="text-white-50 small">Support Hours Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Container -->
+    <section class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Frequently Asked Questions</h2>
+            <p class="text-muted">Most common questions asked by academic applicants.</p>
+        </div>
+        <div class="accordion shadow-sm rounded" id="universityFAQ">
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                        Which universities are available?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#universityFAQ">
+                    <div class="accordion-body text-muted">
+                        We provide personalized counselling support for IGNOU, DU SOL, CCS University, Subharti University, Mangalayatan University, NIOS, BOSSE, and other top-tier approved networks.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0 border-bottom mt-2">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        Is Distance Education valid for government jobs?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#universityFAQ">
+                    <div class="accordion-body text-muted">
+                        Yes. According to UGC rules, degrees obtained via recognized distance mode universities are completely valid for central and state government employment streams.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="bg-dark text-white text-center py-4 border-top border-secondary">
+        <div class="container">
+            <h5 class="fw-bold">Career & Admission Guide</h5>
+            <p class="text-white-50 small mb-0">🎓 Your Trusted Admission Partner | © 2026 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Floating Actions Container -->
+    <a href="https://wa.me/919555666400" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Core Bootstrap JavaScript & Custom Trigger scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

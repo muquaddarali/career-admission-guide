@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Career & Admission Guide</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to your external style.css -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: #f4f7fb;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            background: #0d6efd !important;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(13, 110, 253, .85), rgba(13, 110, 253, .85)), url("images/hero.jpg.webp");
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .feature-icon {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #0b2d5c;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+        
+        footer p {
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                🎓 Career & Admission Guide
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="universities.html">Universities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rci-courses.html">RCI Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="boards.html">Boards</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="display-4 fw-bold">Contact Us</h1>
+        <p class="lead">We're Here to Help You With Admissions & Career Guidance</p>
+    </section>
+
+    <!-- Quick Contact Cards -->
+    <section class="container py-5">
+        <div class="row g-4">
+            <!-- Call Card -->
+            <div class="col-lg-4">
+                <div class="card shadow border-0 h-100 text-center p-4">
+                    <div class="card-body">
+                        <div class="feature-icon">📞</div>
+                        <h4 class="fw-bold">Call Us</h4>
+                        <p class="text-muted mb-4">+91 9555666400</p>
+                        <a href="tel:+919555666400" class="btn btn-primary w-100 rounded-pill">Call Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WhatsApp Card -->
+            <div class="col-lg-4">
+                <div class="card shadow border-0 h-100 text-center p-4">
+                    <div class="card-body">
+                        <div class="feature-icon">💬</div>
+                        <h4 class="fw-bold">WhatsApp</h4>
+                        <p class="text-muted mb-4">Chat with our Admission Expert</p>
+                        <a href="https://wa.me/919555666400" target="_blank" class="btn btn-success w-100 rounded-pill">Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="col-lg-4">
+                <div class="card shadow border-0 h-100 text-center p-4">
+                    <div class="card-body">
+                        <div class="feature-icon">📧</div>
+                        <h4 class="fw-bold">Email Us</h4>
+                        <p class="text-muted mb-4">alimuquaddar@gmail.com</p>
+                        <a href="mailto:alimuquaddar@gmail.com" class="btn btn-primary w-100 rounded-pill">Send Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Admission Form Section -->
+    <section class="container pb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card-body p-5">
+                        <div class="text-center mb-4">
+                            <h2 class="fw-bold">🎓 Quick Admission Form</h2>
+                            <p class="text-muted">Fill the form details and connect with us instantly on WhatsApp.</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="studentName" class="form-label fw-semibold">Full Name</label>
+                            <input type="text" id="studentName" class="form-control form-control-lg" placeholder="Enter Your Name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="studentMobile" class="form-label fw-semibold">Mobile Number</label>
+                            <input type="tel" id="studentMobile" class="form-control form-control-lg" placeholder="Enter Mobile Number">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="studentCourse" class="form-label fw-semibold">Course Interested In</label>
+                            <select id="studentCourse" class="form-select form-select-lg">
+                                <option value="">Select Course</option>
+                                <option value="B.Ed">B.Ed</option>
+                                <option value="D.El.Ed">D.El.Ed</option>
+                                <option value="BA">BA</option>
+                                <option value="B.Com">B.Com</option>
+                                <option value="BCA">BCA</option>
+                                <option value="MBA">MBA</option>
+                                <option value="MA">MA</option>
+                                <option value="RCI Course">RCI Course</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="studentUniversity" class="form-label fw-semibold">Preferred University</label>
+                            <input type="text" id="studentUniversity" class="form-control form-control-lg" placeholder="e.g. IGNOU / DU SOL / Subharti">
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button class="btn btn-success btn-lg rounded-pill" onclick="sendAdmissionForm()">
+                                📲 Apply via WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Details & Map Section -->
+    <section class="container py-5 border-top">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold display-6">🏢 Visit Our Office</h2>
+            <p class="text-muted">Meet our expert admission counsellors for personalized career guidance.</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+            <!-- Office Address Info -->
+            <div class="col-lg-5">
+                <div class="card shadow border-0 h-100 p-4">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="fw-bold mb-4 text-primary">📍 Head Office</h4>
+                            <p class="fs-5">
+                                <strong>Address:</strong><br>
+                                G-28, Street No.13,<br>
+                                Bhagirathi Vihar,<br>
+                                Delhi - 110094
+                            </p>
+                            <hr>
+                            <p><strong>🕒 Working Hours:</strong><br>Monday – Saturday (10:00 AM – 6:00 PM)</p>
+                            <p><strong>📞 Hotline:</strong> <a href="tel:+919555666400" class="text-decoration-none">+91 9555666400</a></p>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://maps.google.com/?q=Bhagirathi+Vihar+Delhi+110094" target="_blank" class="btn btn-outline-primary w-100 rounded-pill">
+                                Open in Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Embedded Live Google Map -->
+            <div class="col-lg-7">
+                <div class="card shadow border-0 h-100 overflow-hidden rounded-3">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Bhagirathi%20Vihar%20Delhi%20110094&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; min-height: 380px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Floating WhatsApp Button -->
+
+<a href="https://wa.me/919555666400"
+class="whatsapp-float"
+target="_blank">
+
+💬
+
+</a>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h4 class="fw-bold">Career & Admission Guide</h4>
+            <p>Admission Guidance | Career Counselling | RCI Courses</p>
+            <p class="small text-white-50 mt-3">© 2026 Career & Admission Guide. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS & Custom Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
